@@ -9,7 +9,7 @@ This app provides a user-friendly graphical interface (GUI) that bypasses the co
 * **Lossless Vector Export:** Export your pen strokes as crisp, infinitely scalable SVGs perfectly suited for web design.  
 * **Automatic SVG Optimization:** Built-in integration with scour to automatically strip unnecessary metadata and optimize paths, reducing SVG file sizes by over 50% without losing visual quality.  
 * **Selective Page Conversion:** Convert an entire notebook at once, or easily specify exactly which pages to export (e.g., 1-3, 5, 8).  
-* **Multi-Page PDFs:** Instantly compile your handwritten notes into a standard, easily shareable PDF document. *Note: pdfs exported from the official partner app may be smaller for the same quality.*  
+* **Multi-Page PDFs:** Instantly compile your handwritten notes into a standard, easily shareable PDF document. *Note: pdfs exported from the official partner app may be smaller for the same quality.*
 * **Native OS Look & Feel:** Built with PyQt6 to seamlessly blend with your operating system's native window styling.
 
 ## **🛠 What it is based on**
@@ -22,13 +22,13 @@ This application stands on the shoulders of some fantastic open-source projects.
 
 ## **🚀 How to Download and Run (Non-Technical Users)**
 
-If you just want to use the app without messing with Python or the terminal, you can download the pre-packaged application or Mac.
+If you just want to use the app without messing with Python or the terminal, you can download the pre-packaged application for Mac.
 
 1. Go to the [**Releases**](https://github.com/gsix14/supernote-converter/releases) page on this GitHub repository.  
 2. Download the latest Supernote Converter.app.zip (for macOS).  
 3. Unzip the file and drag **Supernote Converter.app** into your Applications folder.  
 4. **macOS Security Note:** Because this app is made by an independent developer, macOS might show an "unidentified developer" warning the first time you open it.  
-   * To bypass this, **Right-click** (or Control-click) the app icon and select **Open** from the menu. Click **Open** again on the popup. You only have to do this once\!
+   * To bypass this, **Right-click** (or Control-click) the app icon and select **Open** from the menu. Click **Open** again on the popup. You only have to do this once!
 
 ## **💻 How to Build from Source (For Developers)**
 
@@ -38,30 +38,38 @@ If you want to read the code, run it directly from your terminal, or package it 
 
 Make sure you have Python 3.8+ installed on your system.
 
-### **1\. Clone the repository**
+### **1. Clone the repository**
 
-git clone \[https://github.com/gsix14/supernote-converter.git](https://github.com/gsix14/supernote-converter.git)  
+```bash
+git clone https://github.com/gsix14/supernote-converter.git
 cd supernote-converter
+```
 
-### **2\. Install the required dependencies**
+### **2. Install the required dependencies**
 
 The app requires supernotelib, scour, and PyQt6 to run, and pyinstaller if you wish to package it.
 
+```bash
 pip install supernotelib scour PyQt6 pyinstaller
+```
 
-### **3\. Run the app directly**
+### **3. Run the app directly**
 
 You can test the app without packaging it by running:
 
-python supernote\_gui.py
+```bash
+python supernote_gui.py
+```
 
-### **4\. Package the app into a standalone executable**
+### **4. Package the app into a standalone executable**
 
 To bundle the Python engine, the math libraries, and the GUI into a single, double-clickable application, use PyInstaller.
 
 Run the following command in your terminal:
 
-python \-m PyInstaller \--windowed \--noconsole \--name "Supernote Converter" supernote\_gui.py
+```bash
+python -m PyInstaller --windowed --noconsole --name "Supernote Converter" supernote_gui.py
+```
 
 *Once finished, your self-contained application will be located inside the newly generated dist folder.*
 
