@@ -40,7 +40,7 @@ Make sure you have Python 3.8+ installed on your system.
 
 ### **1\. Clone the repository**
 
-git clone \[https://github.com/gsix14/supernote-converter.git\](https://github.com/gsix14/supernote-converter.git)  
+git clone \[https://github.com/gsix14/supernote-converter.git](https://github.com/gsix14/supernote-converter.git)  
 cd supernote-converter
 
 ### **2\. Install the required dependencies**
